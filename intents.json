@@ -6,66 +6,39 @@
         "Hi",
         "Hey",
         "How are you",
+        "What's up?",
         "Is anyone there?",
         "Hello",
         "Good day"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
+        "Hey there!",
+        "Hi! It's good to see you",
         "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi! I'm glad you reached out to me. How can I help?"
       ]
     },
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Stay safe and take care!",
+        "Have a lovely day!",
+        "Healing takes time. Don't give up and don't get discouraged.",
+        "I'm here for you. Feel free to come back at anytime."
       ]
     },
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "responses": ["Happy to help ;)", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
+      "tag": "about",
+      "patterns": ["Who are you?", "Are you a real person?", "Tell me about yourself!"],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "My name is Happy2Help. I may be a chatbot, but I'm a good listener ;)",
+        "Hey! I'm Happy2Help, your friendly mental health chatbot."
       ]
     },
     {
