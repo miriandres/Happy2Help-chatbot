@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
 </head>
 <body>
@@ -11,24 +12,28 @@
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                <div class="chatbox__img--header">
+                    <img loading="lazy" src="{{ url_for('static', filename='images/icono-bot.png') }}"/>
                 </div>
                 <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                    <h4 class="chatbox__heading--header">Happy2Help</h4>
+                    <p class="chatbox__description--header">Your friendly chatbot</p>
                 </div>
             </div>
             <div class="chatbox__messages">
                 <div></div>
             </div>
             <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
+                <input type="text" placeholder="What brings you here?">
+                <button class="chatbox__send--footer send__btn">
+                    <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                    </svg>
+                </button>
             </div>
         </div>
-        <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        <div class="chatbox__btn">
+            <button><img class="chatbox__btn--img" src="{{ url_for('static', filename='images/idea-robot.png') }}" /></button>
         </div>
     </div>
 </div>
@@ -36,7 +41,7 @@
     <script>
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>
-    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <script defer type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 
 </body>
 </html>

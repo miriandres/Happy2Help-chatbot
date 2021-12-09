@@ -9,7 +9,7 @@ This repo currently contains the starter files.
 Clone repo and create a virtual environment
 ```
 $ git clone https://github.com/miriandres/Happy2Help-chatbot.git
-$ cd chatbot-deployment
+$ cd HAPPY2HELP-CHATBOT
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
