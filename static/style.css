@@ -1,12 +1,16 @@
 :root {
     --gris: #F1F1F1;
+    --gris-oscuro: #555;
     --blanco: #ffffff;
     --azul: #0466ff;
+    --grisMessage :#E0E0E0;
+    --chatboxBg: #f9f9f9;
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 7px 5px 15px rgba(0, 0, 0, 0.1);
     /* Tipografía */
     --tipo-principal: "Nunito", sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +60,6 @@ body {
     transform: translateY(-40px);
     opacity: 1;
     z-index: 2;
-
 }
 
 /* BUTTON */
@@ -89,7 +92,8 @@ body {
     padding: 0 20px;
     display: flex;
     overflow-y: scroll;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .messages__item {
@@ -114,7 +118,7 @@ body {
 .chatbox__support {
     width: 370px;
     height: 600px;
-    background: #f9f9f9;
+    background: var(--chatboxBg);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
@@ -158,11 +162,10 @@ body {
     min-width: 33%;
     margin-top: .6em;
     padding: 0.5em 1em;
-    background: #E0E0E0;
+    background: var(--grisMessage);
 }
 
-.messages__item--visitor,
-.messages__item--typing {
+.messages__item--visitor {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -174,6 +177,37 @@ body {
     border-bottom-left-radius: 20px;
     background: var(--azul);
     color: var(--blanco);
+}
+
+.messages__greeting {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all .5s ease .5s;
+}
+.messages__greeting:nth-child(2) {
+    transition-delay: 1s;
+}
+.messages__greeting.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.loader__dot {
+    display: inline-block;
+    width: 4px;
+    margin: 0 1px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--gris-oscuro);
+}
+.loader__dot:nth-last-child(1) {
+  animation: loading .7s .1s cubic-bezier(0.4, 0.0, 0.2, 1 ) infinite;
+}
+.loader__dot:nth-last-child(2) {
+  animation: loading .7s .2s cubic-bezier(0.4, 0.0, 0.2, 1 ) infinite;
+}
+.loader__dot:nth-last-child(3) {
+  animation: loading .7s .3s cubic-bezier(0.4, 0.0, 0.2, 1 ) infinite;
 }
 
 /* FOOTER */
@@ -205,6 +239,15 @@ body {
     background-color: var(--blanco);
     outline: none;
     border-radius: 50%;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--primaryBoxShadow);
     cursor: pointer;
+}
+
+@keyframes loading {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
 }
