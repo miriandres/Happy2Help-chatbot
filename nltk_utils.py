@@ -1,7 +1,9 @@
+import json
 import numpy as np
 import nltk
 # nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
+from tensorflow.keras.preprocessing import sequence
 stemmer = PorterStemmer()
 
 
@@ -42,3 +44,24 @@ def bag_of_words(tokenized_sentence, words):
             bag[idx] = 1
 
     return bag
+
+def stopwords(sentence):
+    return [x for x in sentence if x not in nltk.corpus.stopwords.words('english')]
+
+def codificacion_sentence(sentence):
+    corpus_codificado = []
+    diccionario = load_file('diccionario.json')
+    for word in sentence:
+        if word in diccionario:
+          corpus_codificado.append(diccionario[word])
+        else:
+          corpus_codificado.append(0)
+    return corpus_codificado
+
+def padding(corpus):
+    return sequence.pad_sequences([corpus], maxlen=10)
+
+def load_file(filename):
+    with open(filename) as f:
+        dicc = json.loads(f.read())
+    return dicc
