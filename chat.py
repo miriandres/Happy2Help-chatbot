@@ -32,7 +32,7 @@ model.eval()
 # Modelo keras: clasifica por sentimiento 
 # Cerca de 0 joy
 # Cerca de 1 sadness
-model_sentiments = load_model('modelo_sentimientos.h5')
+model_sentiments = load_model('modelo_sentimientos_lemma.h5')
 
 bot_name = "Happy2Help"
 

@@ -22,6 +22,7 @@ Install nltk package
 $ (venv) python
 >>> import nltk
 >>> nltk.download('punkt')
+>>> nltk.download('wordnet')
 ```
 Modify `intents.json` with different intents and responses for your Chatbot
 
