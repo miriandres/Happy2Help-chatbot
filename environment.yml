@@ -11,9 +11,7 @@ dependencies:
   ## Core Necessities
   - numpy # -c conda-forge, anaconda
   - nltk=3.6.5
-  - torchvision=0.11.1
   ## Machine Learning
-  - tensorflow=2.6
   - cudnn=8.1 # -c conda-forge | version: 8.1.0.77 (linux/windows)
   #           # -c anaconda | version: 7.6.5 (linux/windows)
   - cudatoolkit=11.2 # -c conda-forge | version: 8.1.0.77 (linux/windows)
@@ -21,7 +19,9 @@ dependencies:
   ## Installations with pip
   - pip
   - pip:
+    - tensorflow==2.5
     - keras==2.7
     - torch==1.10
+    - torchvision==0.11.1
     ## Web App Framework
     - flask==2.0.2
