@@ -2,17 +2,19 @@ import json
 import numpy as np
 import nltk
 # nltk.download('punkt')
+# nltk.download('wordnet')
 from nltk.stem.porter import PorterStemmer
+from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.preprocessing import sequence
 stemmer = PorterStemmer()
-
+lemmatizer = WordNetLemmatizer()
 
 def tokenize(sentence):
     """
     split sentence into array of words/tokens
     a token can be a word or punctuation character, or number
     """
-    return nltk.word_tokenize(sentence)
+    return nltk.word_tokenize(sentence.lower())
 
 
 def stem(word):
@@ -50,7 +52,8 @@ def stopwords(sentence):
 
 def codificacion_sentence(sentence):
     corpus_codificado = []
-    diccionario = load_file('diccionario.json')
+    diccionario = load_file('diccionario_lemma.json')
+    sentence = [lemmatizer.lemmatize(word) for word in sentence]
     for word in sentence:
         if word in diccionario:
           corpus_codificado.append(diccionario[word])
@@ -59,7 +62,7 @@ def codificacion_sentence(sentence):
     return corpus_codificado
 
 def padding(corpus):
-    return sequence.pad_sequences([corpus], maxlen=10)
+    return sequence.pad_sequences([corpus], maxlen=15)
 
 def load_file(filename):
     with open(filename) as f:
