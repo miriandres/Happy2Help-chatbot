@@ -92,7 +92,7 @@ def get_response(msg, score):
             if tag == intent['tag']:
                 return random.choice(intent['responses']), input_score
 
-    return "Not sure I understand", non_valid_input_score
+    return "Sorry, what do you mean by that? \nI'm here to help", non_valid_input_score
 
 
 if __name__ == "__main__":
