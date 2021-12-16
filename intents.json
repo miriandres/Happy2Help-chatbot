@@ -3,13 +3,6 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "What's up?",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
       ],
       "responses": [
         "Hey there!",
@@ -20,25 +13,100 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
       "responses": [
         "Stay safe and take care!",
         "Have a lovely day!",
-        "Healing takes time. Don't give up and don't get discouraged.",
         "I'm here for you. Feel free to come back at anytime."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help ;)", "Any time!", "My pleasure"]
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "Ty"
+      ],
+      "responses": [
+        "Happy to help ;)", 
+        "Any time!", 
+        "My pleasure"
+      ]
     },
     {
       "tag": "about",
-      "patterns": ["Who are you?", "Are you a real person?", "Tell me about yourself!"],
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "What's up?",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Who are you?", 
+        "Are you a real person?", 
+        "Tell me about yourself!", 
+        "Who am I talking to?"
+      ],
       "responses": [
-        "My name is Happy2Help. I may be a chatbot, but I'm a good listener ;)",
-        "Hey! I'm Happy2Help, your friendly mental health chatbot."
+        "My name is Happy2Help. I may be a chatbot, but I'm a good listener 😉 \nHow was your day?",
+        "Hey! I'm Happy2Help, your friendly mental health chatbot. \nHow do you feel today?",
+        "I'm Happy2Help, your friendly mental health chatbot. \nHow are you today?",
+        "Let me introduce myself to you, my new friend: My name is Happy2Help 😃 \nHow have you feeling the past few days?"
+      ]
+    },
+    {
+      "tag": "interest",
+      "patterns": [
+      ],
+      "responses": [
+        "Tell me more about that.",
+        "How do you feel about it?",
+        "How does that make you feel?",
+        "Please, explain to me what does that mean to you.",
+        "So, how does that impact the way you feel about yourself?",
+        "What have you learned from this state of affairs that could be useful to you in the future?",
+        "If you were to describe your emotions using a metaphor, what would they look like?",
+        "I sympathize with your feelings \nWhere are you right now in your situation?"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+      ],
+      "responses": [
+        "How long have you been feeling this way?",
+        "How long have you been having this idea?",
+        "How long have you been thinking about it?"
+      ]
+    },
+    {
+      "tag": "joy",
+      "patterns": [
+      ],
+      "responses": [
+        "I'm so glad for you!",
+        "Great 😀", 
+        "I'm so happy for you",
+        "Good to hear it, buddy!"
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+      ],
+      "responses": [
+        "Healing takes time. Don't give up and don't get discouraged.",
+        "Hang in there, everything will be fine.",
+        "No matter what happens, I'm on your side 😉",
+        "We can’t control the world. We can only barely control our own reactions to it. Happiness is largely a choice, not a right or entitlement.",
+        "I think happiness is a state of mind. Repeat yourself: “I choose to be happy today”."
       ]
     },
     {
@@ -51,7 +119,17 @@
       "responses": [
         "Hear about the new restaurant called Karma? There's no menu: You get what you deserve",
         "What do you call a fake noodle? An impasta!",
-        "What did the buffalo say when his son left for college? Bison."
+        "What did the buffalo say when his son left for college? Bison.",
+        "What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.",
+        "I invented a new word! Plagiarism!",
+        "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+        "A woman in labor suddenly shouted, “Shouldn’t! Wouldn’t! Couldn’t! Didn’t! Can’t!” “Don’t worry,” said the doc. “Those are just contractions.”",
+        "Did you hear about the claustrophobic astronaut? He just needed a little space.",
+        "How do you drown a hipster? Throw him in the mainstream.",
+        "Why can’t you explain puns to kleptomaniacs? They always take things literally.",
+        "What do you call a parade of rabbits hopping backwards? A receding hare-line.",
+        "What did the Buddhist say to the hot dog vendor? Make me one with everything.",
+        "What did the left eye say to the right eye? Between you and me, something smells."
       ]
     }
   ]
