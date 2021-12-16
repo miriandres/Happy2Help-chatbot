@@ -13,7 +13,8 @@ def index_get():
 def predict():
     text = request.get_json().get("message")
     # TODO: check if text is valid
-    response = get_response(text)
+    response = get_response(text, score)
+    response = response[0]
     message = {"answer": response}
     return jsonify(message)
 
