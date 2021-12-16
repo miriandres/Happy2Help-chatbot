@@ -16,6 +16,7 @@ $ . venv/bin/activate
 Install dependencies
 ```
 $ (venv) pip install Flask torch torchvision nltk tensorflow
+$ (venv) pip install numpy
 ```
 Install nltk packages
 ```
