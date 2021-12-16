@@ -5,12 +5,13 @@ from chat import get_response
 app = Flask(__name__)
 
 
+
 @app.get("/")
 def index_get():
     return render_template("base.html")
 
 @app.post("/predict")
-def predict(score_resp):
+def predict():
     text = request.get_json().get("message")
     # TODO: check if text is valid
     response = get_response(text, score_resp)
@@ -23,5 +24,6 @@ def predict(score_resp):
     return jsonify(message)
 
 if __name__ == "__main__":
-    app.run(debug=True)
     score_resp = []
+    app.run(debug=True)
+    
