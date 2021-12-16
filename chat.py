@@ -37,7 +37,7 @@ model_sentiments = load_model('modelo_sentimientos_lemma.h5')
 
 bot_name = "Happy2Help"
 
-def get_response(msg):
+def get_response(msg, score):
     # Limpieza de la frase para el modelo Torch
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
