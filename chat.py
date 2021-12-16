@@ -73,7 +73,7 @@ def get_response(msg, score):
     elif len(score) == 3:
         tag = 'support'
     #Release the direction of the speech, so user can access more conversation options or finish it anytime
-    elif len(score) >= 4 and pred_item < 0.75 or len(score) >=3 and tag == 'about':
+    elif len(score) >= 4 and pred_item < 0.75 or len(score) >=4 and tag == 'about':
         #Tag-about prevents bot to redirect conversation to greeting phase if 'day' is used
         if tag == 'about':
             input_score = [0]
