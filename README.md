@@ -2,6 +2,9 @@
 Working from home and lack of physical contact has become our new reality. We are faced with uncertainty and mental healthcare tools are more necessary than ever.
 Happy2Help provides assistance to people with no access to therapy and estimates their mental condition. A conversational interface with automated text interactions that recognizes behavioural patterns and give advice for those who are struggling.  High-risk patients are advised to contact with a licensed therapist.
 
+<p align="center">
+  <img width="250" src="https://user-images.githubusercontent.com/86624207/147703339-6a74f2f3-22b3-4d64-882d-d84caccdf4fb.gif" />
+</p>
 
 ## Initial Setup:
 This repo currently contains the starter files.
