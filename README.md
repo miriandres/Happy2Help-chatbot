@@ -7,8 +7,7 @@ Happy2Help provides assistance to people with no access to therapy and estimates
 </p>
 
 ## Initial Setup:
-This repo currently contains the starter files.
-
+### a. Basic version
 Clone repo and create a virtual environment
 ```
 $ git clone https://github.com/miriandres/Happy2Help-chatbot.git
@@ -18,8 +17,8 @@ $ . venv/bin/activate
 ```
 Install dependencies
 ```
-$ (venv) pip install Flask torch torchvision nltk tensorflow
-$ (venv) pip install numpy
+$ (venv) pip install Flask torch torchvision tensorflow
+$ (venv) pip install numpy nltk
 ```
 Install nltk packages
 ```
@@ -28,7 +27,6 @@ $ (venv) python
 >>> nltk.download('punkt')
 >>> nltk.download('wordnet')
 ```
-
 Run
 ```
 $ (venv) python train.py
@@ -37,4 +35,11 @@ This will dump data.pth file. And then run
 the following command to test it in the console.
 ```
 $ (venv) python app.py
+```
+
+### b. Conda version
+```
+$ git clone https://github.com/miriandres/Happy2Help-chatbot.git
+$ cd HAPPY2HELP-CHATBOT
+$ conda env create -f environment.yml
 ```
