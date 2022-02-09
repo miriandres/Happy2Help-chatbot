@@ -6,6 +6,11 @@ Happy2Help provides assistance to people with no access to therapy and estimates
   <img width="250" src="https://user-images.githubusercontent.com/86624207/147703339-6a74f2f3-22b3-4d64-882d-d84caccdf4fb.gif" />
 </p>
 
+## Team Members:
+- Miriam Andrés:  [@miriandres](https://github.com/miriandres)
+- Jesica Míguez:  [@jemrosas](https://github.com/jemrosas)
+- Sandra Orengo:  [@sof1508](https://github.com/sof1508)
+
 ## Initial Setup:
 ### a. Basic version
 Clone repo and create a virtual environment
