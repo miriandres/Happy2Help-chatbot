@@ -11,6 +11,14 @@ Happy2Help provides assistance to people with no access to therapy and estimates
 - Jesica Míguez:  [@jemrosas](https://github.com/jemrosas)
 - Sandra Orengo:  [@sof1508](https://github.com/sof1508)
 
+## Built with 🛠️
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/2.2.x/)
+[![JavaScript](https://img.shields.io/static/v1?label=&message=JavaScript&color=f7df1e&logo=javascript&logoColor=black&style=for-the-badge)](https://www.javascript.com/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/)
+[![BEM Methodology](https://img.shields.io/static/v1?label=&message=BEM%20Methodology&color=17A1E6&logo=bem&logoColor=white&style=for-the-badge)](http://getbem.com/)
+
 ## Initial Setup:
 ### a. Basic version
 Clone repo and create a virtual environment
