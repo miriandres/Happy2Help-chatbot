@@ -1,5 +1,5 @@
 # Happy2Help Chatbot
-<img width="1552" src="/design/banner.png" />
+<img width="1552" alt="Happy2Help banner" title="Happy2Help" src="/design/banner.png" />
 
 <div align="center">
 
@@ -31,7 +31,7 @@ Tweets related to depression issues categorized from a labeled dataset gathered 
 <p align="center">
   <img width="250" src="https://user-images.githubusercontent.com/86624207/147703339-6a74f2f3-22b3-4d64-882d-d84caccdf4fb.gif" />
 </p>
-<img src="/design/palette.png" />
+<img alt="Color palette" title="Color palette" src="/design/palette.png" />
 
 ### Workflow
 ![Workflow](https://user-images.githubusercontent.com/86624207/187969376-b6e98cae-41d6-4647-b7d0-56d2607fd833.png)
